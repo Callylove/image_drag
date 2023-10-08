@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader : multiple file</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <div class="card">
+        <div class="top">
+            <p>Drag and drop image uploading</p>
+            <button type="button">Upload</button>
+
+        </div>
+        <form action="/upload" method="post" class="dragover">
+            <span class="inner">Drag & drop image here or <span id="select">Browse</span></span>
+            <input type="file" name="file" class="file" multiple hidden accept="image/*" />
+        </form>
+        <div class="container" draggable="true">
+           
+        </div>
+    </div>
+</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
